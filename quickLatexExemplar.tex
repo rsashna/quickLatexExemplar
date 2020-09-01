@@ -1,0 +1,87 @@
+\documentclass[12pt,twoside,a4paper]{article}
+%more classes:
+% article for articles in scientific journals, presentations, short reports, pro-gram documentation, invitations, ...
+% book has neat features, look for more at https://www.overleaf.com/learn/latex/headers_and_footers
+% slides uses spaces out rounded sansserrif letters
+% Beamer slides but sized down too
+%Also columns with onecolumn,twocolumn
+% landscape to change orientation of pg
+
+% \setlength{\parindent}{4em}
+% \setlength{\parskip}{1em}
+% \renewcommand{\baselinestretch}{2.0}
+
+
+%language selector: \usepackage[english]{babel}
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+\usepackage{color}
+\setlength{\columnseprule}{1pt} %creates a line b/w cols
+\def\columnseprulecolor{\color{gray}}
+
+\usepackage{xcolor}
+
+\begin{document}
+
+\section*{This is a Section}
+
+
+
+\subsection*{This is a Subsection about the \textbackslash}
+
+\# \$ \% \^{} \& \_ \{ \} \~word \~{} \textbackslash
+\newline \newline Since \textbackslash s are used in commands, the 'textbackslash' keyword is used instead
+\newline Also use \% to comment out %TODO add something here
+
+\subsection*{Italics and font styles}
+Look at this \textsl{slanted} word
+\newline or this \textit{italicised} word %also works with \emph{} which toggles the style
+\newline Look at this \textbf{bold} word \newline And \underline{underlined} word
+\newline Aaand \textbf{\textit{\underline{all of the above}}}
+\newline \newline Add some \textcolor{blue}{blue coloured} text
+
+\newpage
+
+\subsection*{Changing number of Columns in a Section}
+\begin{multicols}{2}
+  [
+\newline This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column.
+]
+
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\end{multicols}
+
+\subsection*{Another Column Ex}
+\newline This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column.
+
+\begin{multicols}{3}
+  \setlength{\columnsep}{0.5cm}
+  \setlength{\columnseprule}{} %remove prev sep
+
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+
+\columnbreak %remove this to eqi-balance cols
+
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\newline This needs to be in double columns. This needs to be in double columns.
+\end{multicols}
+
+
+
+\end{document}
