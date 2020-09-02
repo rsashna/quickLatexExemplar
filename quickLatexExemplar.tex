@@ -7,25 +7,34 @@
 %Also columns with onecolumn,twocolumn
 % landscape to change orientation of pg
 
-% \setlength{\parindent}{4em}
-% \setlength{\parskip}{1em}
-% \renewcommand{\baselinestretch}{2.0}
 
+\usepackage[dvipsnames]{xcolor}
+% own colours can be picked with rgb/cymk like so \definecolor{nameOfClr}{RGB}{0, 117, 92}
+% can take tints/shades of colours like so
+\colorlet{TurquoiseLighter2}{Turquoise!40!}
+
+\usepackage{color}
+\usepackage{xcolor}
 
 %language selector: \usepackage[english]{babel}
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
-\usepackage{color}
+
+\usepackage{ragged2e}
+
 \setlength{\columnseprule}{1pt} %creates a line b/w cols
 \def\columnseprulecolor{\color{gray}}
 
-\usepackage{xcolor}
+\setlength{\parindent}{1em} %paragraph indentation size and space b/w paragraphs
+\setlength{\parskip}{1em}
+
+
+
+%.............................................%
 
 \begin{document}
 
 \section*{This is a Section}
-
-
 
 \subsection*{This is a Subsection about the \textbackslash}
 
@@ -38,8 +47,9 @@ Look at this \textsl{slanted} word
 \newline or this \textit{italicised} word %also works with \emph{} which toggles the style
 \newline Look at this \textbf{bold} word \newline And \underline{underlined} word
 \newline Aaand \textbf{\textit{\underline{all of the above}}}
-\newline \newline Add some \textcolor{blue}{blue coloured} text
-
+\newline \newline Add some \textcolor{blue}{blue coloured} text, or even some
+\textcolor{Turquoise}{fancy turquoise coloured} text, with some
+\textcolor{TurquoiseLighter2}{ligher hues}
 \newpage
 
 \subsection*{Changing number of Columns in a Section}
@@ -48,40 +58,50 @@ Look at this \textsl{slanted} word
 \newline This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column.
 ]
 
+\newline \noindent This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
+
 \end{multicols}
 
 \subsection*{Another Column Ex}
-\newline This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column.
+\par This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. \par This just needs to be in a single column. This just needs to be in a single column.
 
 \begin{multicols}{3}
   \setlength{\columnsep}{0.5cm}
-  \setlength{\columnseprule}{} %remove prev sep
+  \setlength{\columnseprule}{0pt} %remove prev sep
 
+\newline \noindent This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-
-\columnbreak %remove this to eqi-balance cols
-
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \end{multicols}
 
+\newpage
 
+\begin{center}
+\subsection*{Text Alignment for Paragraphs}
+This is a centered paragraph. This is a centered paragraph. This is a centered paragraph. This is a centered paragraph. This is a centered paragraph. This is a centered paragraph. This is a centered paragraph. This is a centered paragraph. This is a centered paragraph. This is a centered paragraph.
+\end{center}
+
+\begin{flushright}
+This is a right aligned paragraph. This is a right aligned paragraph. This is a right aligned paragraph. This is a right aligned paragraph. This is a right aligned paragraph. This is a right aligned paragraph. This is a right aligned paragraph. This is a right aligned paragraph. This is a right aligned paragraph. This is a right aligned paragraph.
+\end{flushright}
+
+\begin{flushleft}
+This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph.
+\end{flushleft}
+
+\centering
+Alternate command to align text. Alternate command to align text. Alternate command to align text. Alternate command to align text. Alternate command to align text. \justify Alternate command to align text. Alternate command to align text. Alternate command to align text. Alternate command to align text. Alternate command to align text. Alternate command to align text.
 
 \end{document}
