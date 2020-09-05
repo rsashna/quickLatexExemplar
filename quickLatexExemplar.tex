@@ -7,7 +7,22 @@
 %Also columns with onecolumn,twocolumn
 % landscape to change orientation of pg
 
-
+% \usepackage{fontspec} %font change
+% Times New Roman
+% \setromanfont[
+% BoldFont=timesbd.ttf,
+% ItalicFont=timesi.ttf,
+% BoldItalicFont=timesbi.ttf,
+% ]{times.ttf}
+% Arial
+% \setsansfont[
+% BoldFont=arialbd.ttf,
+% ItalicFont=ariali.ttf,
+% BoldItalicFont=arialbi.ttf
+% ]{arial.ttf}
+% \setromanfont{Times New Roman}
+%   \setsansfont{Arial}
+%   \setmonofont[Color={0019D4}]{Courier New}
 \usepackage[dvipsnames]{xcolor}
 % own colours can be picked with rgb/cymk like so \definecolor{nameOfClr}{RGB}{0, 117, 92}
 % can take tints/shades of colours like so
@@ -20,7 +35,7 @@
 \usepackage{multicol}
 \setlength{\columnsep}{1cm}
 
-\usepackage{ragged2e}
+\usepackage{ragged2e}%for alignment purposes
 
 \setlength{\columnseprule}{1pt} %creates a line b/w cols
 \def\columnseprulecolor{\color{gray}}
@@ -28,11 +43,18 @@
 \setlength{\parindent}{1em} %paragraph indentation size and space b/w paragraphs
 \setlength{\parskip}{1em}
 
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\spacerCmd}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
 
-
+\usepackage{tabularx} %for making less-simple tables
 %.............................................%
 
 \begin{document}
+
+\begin{center}
+  \section*{A Quick(er) Intro to \LaTeX}
+\end{center}
 
 \section*{This is a Section}
 
@@ -55,10 +77,9 @@ Look at this \textsl{slanted} word
 \subsection*{Changing number of Columns in a Section}
 \begin{multicols}{2}
   [
-\newline This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column.
+This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column.
 ]
-
-\newline \noindent This needs to be in double columns. This needs to be in double columns.
+\noindent This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
 \newline This needs to be in double columns. This needs to be in double columns.
@@ -74,16 +95,14 @@ Look at this \textsl{slanted} word
   \setlength{\columnsep}{0.5cm}
   \setlength{\columnseprule}{0pt} %remove prev sep
 
-\newline \noindent This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
+  This needs to be in triple columns. This needs to be in triple columns. This needs to be in triple columns. This needs to be in triple columns. This needs to be in triple columns. This needs to be in triple columns.
+  \newline This needs to be in triple columns. This needs to be in triple columns.
+  \newline This needs to be in triple columns. This needs to be in triple columns.
+  \newline This needs to be in triple columns. This needs to be in triple columns.
+  \newline This needs to be in triple columns. This needs to be in triple columns.
+  \newline This needs to be in triple columns. This needs to be in triple columns.
+  \newline This needs to be in triple columns. This needs to be in triple columns.
+  \newline This needs to be in triple columns. This needs to be in triple columns.
 \end{multicols}
 
 \newpage
@@ -101,7 +120,52 @@ This is a right aligned paragraph. This is a right aligned paragraph. This is a 
 This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph. This is a left aligned paragraph.
 \end{flushleft}
 
+%other alighnment options \raggedleft \raggedright
 \centering
 Alternate command to align text. Alternate command to align text. Alternate command to align text. Alternate command to align text. Alternate command to align text. \justify Alternate command to align text. Alternate command to align text. Alternate command to align text. Alternate command to align text. Alternate command to align text. Alternate command to align text.
+
+\newpage
+\subsection*{Lines and Tables}
+
+\vspace{40pt}
+
+\hrule height 0.1pt \relax
+Making some ruled lines
+\hrule height 0.5pt \relax
+Making some ruled lines
+\hrule height 1pt \relax
+Making some ruled lines
+\hrule height 3pt \relax
+Making some ruled lines
+\hrule height 10pt \relax
+
+\subsection*{Simple Table Structures}
+
+\begin{tabular}{ c |c| c }
+ someData & someData & someData \\
+ \hline
+ someData & someData & someData \\
+ someData & someData & someData
+\end{tabular}
+
+\begin{tabular}{ |c|c|c| }
+\hline
+ someData & someData & someData \\
+ someData & someData & someData \\
+ someData & someData & someData \\
+\hline
+\end{tabular}
+
+\subsection*{A Less-Simple Table Structure}
+\begin{tabularx}{0.8\textwidth} {
+  | >{\raggedright\arraybackslash}X
+  | >{\centering\arraybackslash}X
+  | >{\raggedleft\arraybackslash}X | }
+ \hline
+ moreData & moreData & moreData \\
+ \hline
+ moreData & moreData & moreData \\
+\hline
+\end{tabularx}
 
 \end{document}
