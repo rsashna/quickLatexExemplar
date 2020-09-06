@@ -57,12 +57,25 @@
     filecolor=magenta,
     urlcolor=cyan,
 }
+% for images and figure captions
+\usepackage{tikz}
+\usepackage{xparse}
+\usepackage{graphicx}
+
+\newsavebox\abimagebox
+\DeclareDocumentCommand \includegraphicsd { o m }{%
+    \sbox\abimagebox{\includegraphics[#1]{#2}}%
+    \begin{tikzpicture}
+    \node[draw, dashed, text width=\the\wd\abimagebox,minimum height=\the\ht\abimagebox, align=center, inner sep=0]{This is white};%
+    \end{tikzpicture}%
+}%
+
 %.............................................%
 
 \begin{document}
 
 \begin{center}
-  \section*{A Quick(er) Intro to \LaTeX}
+  \part*{A Quick(er) Intro to \LaTeX}
 \end{center}
 
 \section*{This is a Section}
@@ -177,4 +190,19 @@ Making some ruled lines
 \hline
 \end{tabularx}
 \newline since there are too many table formats to list, c/p from \href{https://www.overleaf.com/learn/latex/tables}{here instead}
+
+%Display a figure and caption
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.345\textwidth]{ninjaBunny.jpg}
+  \caption{This is a ninja bunny.}
+\end{figure}
+
+%Display an empty figure and caption
+\begin{figure}[htbp]
+  \centering
+  \includegraphicsd[width=0.345\textwidth]{ninjaBunny.jpg}
+  \caption{Image/figure missing}
+\end{figure}
+
 \end{document}
