@@ -240,11 +240,17 @@ INPUT ./ninjaBunny.jpg
 INPUT ./ninjaBunny.jpg
 INPUT ninjaBunny.jpg
 INPUT ./ninjaBunny.jpg
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
+INPUT partOne.tex
+INPUT partOne.tex
 INPUT build/quickLatexExemplar.aux
 INPUT build/quickLatexExemplar.out
 INPUT build/quickLatexExemplar.out
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb
+INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb
 INPUT /usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb

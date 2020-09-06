@@ -1,9 +1,10 @@
 # Fdb version 3
-["pdflatex"] 1599370828 "quickLatexExemplar.tex" "build/quickLatexExemplar.pdf" "quickLatexExemplar" 1599370830
+["pdflatex"] 1599409794 "quickLatexExemplar.tex" "build/quickLatexExemplar.pdf" "quickLatexExemplar" 1599409795
   "/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1136768653 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm" 1136768653 1116 4e6ba9d7914baa6482fd69f67d126380 ""
+  "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1136768653 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmbxti10.tfm" 1136768653 1532 9162035f4e7176612125649e348e2195 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -19,6 +20,7 @@
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmti12.tfm" 1136768653 1484 ed72f8f5cf654cda15ecc8e32bfcbee5 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pfb" 1248133631 34793 87a84b12f86dfd35a1cf1bb142b75602 ""
+  "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb" 1248133631 36554 b67dc2cfa451409e100b3fcf5f506509 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -143,12 +145,13 @@
   "/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1586288239 4811913 0be9a7e86c70a26e5e3042966bcd7097 ""
   "/usr/local/texlive/2020/texmf-var/web2c/pdftex/pdflatex.fmt" 1586288259 2432462 fd0fa20e9a3cb5f8169fd0ba1c955158 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "build/quickLatexExemplar.aux" 1599370829 926 08a75868a74da2109cd699ff67bba51b "pdflatex"
-  "build/quickLatexExemplar.out" 1599370829 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "build/quickLatexExemplar.aux" 1599409795 926 08a75868a74da2109cd699ff67bba51b "pdflatex"
+  "build/quickLatexExemplar.out" 1599409795 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "ninjaBunny.jpg" 1599370349 277467 79fc8c0749894062e9e51518920c0127 ""
-  "quickLatexExemplar.tex" 1599370825 8186 2c6d5930641044fd73f8b85a77b97111 ""
+  "partOne.tex" 1599409555 128 e5ede76ffa28f2ec3009a7d6459b4c56 ""
+  "quickLatexExemplar.tex" 1599409789 8373 936c4fb8033a0837583acfddfa77e2ab ""
   (generated)
   "build/quickLatexExemplar.pdf"
-  "build/quickLatexExemplar.log"
   "build/quickLatexExemplar.out"
   "build/quickLatexExemplar.aux"
+  "build/quickLatexExemplar.log"

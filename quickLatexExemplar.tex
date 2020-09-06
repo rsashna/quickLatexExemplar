@@ -63,12 +63,12 @@
 \usepackage{graphicx}
 
 \newsavebox\abimagebox
-\DeclareDocumentCommand \includegraphicsd { o m }{%
-    \sbox\abimagebox{\includegraphics[#1]{#2}}%
+\DeclareDocumentCommand \includegraphicsd { o m }{
+    \sbox\abimagebox{\includegraphics[#1]{#2}}
     \begin{tikzpicture}
-    \node[draw, dashed, text width=\the\wd\abimagebox,minimum height=\the\ht\abimagebox, align=center, inner sep=0]{This is white};%
-    \end{tikzpicture}%
-}%
+    \node[draw, dashed, text width=\the\wd\abimagebox,minimum height=\the\ht\abimagebox, align=center, inner sep=0]{Alt text here};
+    \end{tikzpicture}
+}
 
 %.............................................%
 
@@ -93,7 +93,7 @@ Look at this \textsl{slanted} word
 \newline Aaand \textbf{\textit{\underline{all of the above}}}
 \newline \newline Add some \textcolor{blue}{blue coloured} text, or even some
 \textcolor{Turquoise}{fancy turquoise coloured} text, with some
-\textcolor{TurquoiseLighter2}{ligher hues}
+\textcolor{TurquoiseLighter2}{ligher values}
 \newpage
 
 \subsection*{Changing number of Columns in a Section}
@@ -191,18 +191,27 @@ Making some ruled lines
 \end{tabularx}
 \newline since there are too many table formats to list, c/p from \href{https://www.overleaf.com/learn/latex/tables}{here instead}
 
+\newpage
+\subsection*{Images and Figures}
+
 %Display a figure and caption
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.345\textwidth]{ninjaBunny.jpg}
+  \includegraphics[width=0.2\textwidth]{ninjaBunny.jpg}
   \caption{This is a ninja bunny.}
 \end{figure}
 
 %Display an empty figure and caption
 \begin{figure}[htbp]
   \centering
-  \includegraphicsd[width=0.345\textwidth]{ninjaBunny.jpg}
+  \includegraphicsd[width=0.15\textwidth]{ninjaBunny.jpg}
   \caption{Image/figure missing}
 \end{figure}
+
+\newpage
+\subsection*{Importing \LaTeX from another File}
+\input{partOne}
+% Another method is \include which inserts the tex output as its own page
+
 
 \end{document}
