@@ -43,7 +43,8 @@
 \setlength{\parindent}{1em} %paragraph indentation size and space b/w paragraphs
 \setlength{\parskip}{1em}
 
-% make "C++" look pretty when used in text by touching up the plus signs
+% an example of how to make newcommands
+ % make "C++" look pretty when used in text by touching up the plus signs
 \newcommand{\spacerCmd}
 {C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
 
@@ -75,7 +76,7 @@
 \begin{document}
 
 \begin{center}
-  \part*{A Quick(er) Intro to \LaTeX}
+  \part*{A Quick(er) Intro to \LaTeX} %* removes the automatic numbering for sections and subsections; remove to include
 \end{center}
 
 \section*{This is a Section}
@@ -102,11 +103,11 @@ Look at this \textsl{slanted} word
 This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column. This just needs to be in a single column.
 ]
 \noindent This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
-\newline This needs to be in double columns. This needs to be in double columns.
+\\This needs to be in double columns. This needs to be in double columns.
+\\This needs to be in double columns. This needs to be in double columns.
+\\This needs to be in double columns. This needs to be in double columns.
+\\This needs to be in double columns. This needs to be in double columns.
+\\This needs to be in double columns. This needs to be in double columns.
 
 \end{multicols}
 
@@ -212,6 +213,33 @@ Making some ruled lines
 \subsection*{Importing \LaTeX from another File}
 \input{partOne}
 % Another method is \include which inserts the tex output as its own page
+\subsection*{Adjusting Margins}
+To view the current layout of the page:
+Add the packages
+\textbackslash usepackage[showframe]{geometry}
+\textbackslash usepackage{layout}
+and add \textbackslash layout right after the begin{document}
 
+\subsection*{An Easier Margin Ajustment Method}
+\begin{verbatim}
+  \usepackage[top=1in, bottom=1in, left=1.25in, right=1.25in]{geometry}
+  \usepackage{layout}
+
+\end{verbatim}
+
+\subsection*{Some ways to add Extra Spacing}
+This is using enskip \enskip This is using smallskip \smallskip This is using quad \quad This is using qquad \qquad This is using medskip \medskip ...
+
+\newpage
+\subsection*{Adding `Minipages' like Textboxes}
+Use the following to make custom columns and text-box-like divisors
+\begin{verbatim}
+  \begin{minipage}[c]{0.35\linewidth}
+    words words words
+  \hspace{3mm}% spacing here
+  \begin{minipage}[c]{0.6\linewidth}
+    words words words
+  \end{minipage}%
+\end{verbatim}
 
 \end{document}
