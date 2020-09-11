@@ -95,6 +95,12 @@ Look at this \textsl{slanted} word
 \newline \newline Add some \textcolor{blue}{blue coloured} text, or even some
 \textcolor{Turquoise}{fancy turquoise coloured} text, with some
 \textcolor{TurquoiseLighter2}{ligher values}
+
+\subsection*{Remove Page Number}
+Use \begin{verbatim}
+  \pagenumbering{gobble}
+\end{verbatim} after starting the doccument
+
 \newpage
 
 \subsection*{Changing number of Columns in a Section}
@@ -229,6 +235,7 @@ and add \textbackslash layout right after the begin{document}
 
 \subsection*{Some ways to add Extra Spacing}
 This is using enskip \enskip This is using smallskip \smallskip This is using quad \quad This is using qquad \qquad This is using medskip \medskip ...
+Or use custom spacing with \textbackslash hpace\{5mm\} and to skip vertically \textbackslash hspace\{5mm\}.
 
 \newpage
 \subsection*{Adding `Minipages' like Textboxes}

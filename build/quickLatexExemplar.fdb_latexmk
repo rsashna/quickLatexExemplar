@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1599617511 "build/quickLatexExemplar.xdv" "build/quickLatexExemplar.pdf" "build/quickLatexExemplar" 1599617512
-  "build/quickLatexExemplar.xdv" 1599617511 57640 41cef1f1b90b59dd8787ab2e16a6146c "xelatex"
+["xdvipdfmx"] 1599794794 "build/quickLatexExemplar.xdv" "build/quickLatexExemplar.pdf" "build/quickLatexExemplar" 1599794795
+  "build/quickLatexExemplar.xdv" 1599794794 59264 ff70af76b48dc6d9498d49c28f9a206a "xelatex"
   (generated)
   "build/quickLatexExemplar.pdf"
-["xelatex"] 1599617510 "quickLatexExemplar.tex" "build/quickLatexExemplar.xdv" "quickLatexExemplar" 1599617512
+["xelatex"] 1599794794 "quickLatexExemplar.tex" "build/quickLatexExemplar.xdv" "quickLatexExemplar" 1599794795
   "/usr/local/texlive/2020/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1136768653 1528 f853c4d1b4e0550255e02831fdc8496f ""
   "/usr/local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1136768653 1524 4414a8315f39513458b80dfc63bff03a ""
@@ -133,13 +133,13 @@
   "/usr/local/texlive/2020/texmf-dist/web2c/texmf.cnf" 1583102494 39451 60d7debd9ef8ece44cbe965493576c2d ""
   "/usr/local/texlive/2020/texmf-var/web2c/xetex/xelatex.fmt" 1586288269 4769632 cea4f80911e5df070b1f6d7834d4faf8 ""
   "/usr/local/texlive/2020/texmf.cnf" 1586288231 577 d60164b4589a341208aff7a667fbbdcb ""
-  "build/quickLatexExemplar.aux" 1599617511 892 c0b9cf0554b9c8e6b400de26da56b36f "xelatex"
-  "build/quickLatexExemplar.out" 1599617511 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
+  "build/quickLatexExemplar.aux" 1599794794 892 c0b9cf0554b9c8e6b400de26da56b36f "xelatex"
+  "build/quickLatexExemplar.out" 1599794794 0 d41d8cd98f00b204e9800998ecf8427e "xelatex"
   "ninjaBunny.jpg" 1599370349 277467 79fc8c0749894062e9e51518920c0127 ""
   "partOne.tex" 1599409555 128 e5ede76ffa28f2ec3009a7d6459b4c56 ""
-  "quickLatexExemplar.tex" 1599617477 9390 d19f03fa8d7ea5c53c2c98d98e505e9d ""
+  "quickLatexExemplar.tex" 1599794786 9623 af5c049193e0fe4f710217a3d258c365 ""
   (generated)
-  "build/quickLatexExemplar.xdv"
-  "build/quickLatexExemplar.log"
-  "build/quickLatexExemplar.out"
   "build/quickLatexExemplar.aux"
+  "build/quickLatexExemplar.xdv"
+  "build/quickLatexExemplar.out"
+  "build/quickLatexExemplar.log"
